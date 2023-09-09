@@ -1,6 +1,8 @@
 import AddPost from "@/components/AddPost";
 import PostList from "@/components/PostList";
 
+export const runtime = "edge";
+
 async function getData() {
   const res = await fetch(
     "https://next-prisma-92e749xji-mhhasanmehedi.vercel.app/api/posts",
