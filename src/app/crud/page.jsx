@@ -4,7 +4,7 @@ import PostList from "@/components/PostList";
 export const runtime = "edge";
 
 async function getData() {
-  const res = await fetch("http://localhost:3000/api/posts", {
+  const res = await fetch("https://next-prisma-plum.vercel.app/api/posts", {
     cache: "no-store",
   });
 
